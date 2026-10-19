@@ -2,6 +2,17 @@
 
 A responsive, frontend-only website built with plain HTML, CSS and JavaScript. No build step, server, third-party package, contact-form service or external image is required. All site pages and image references are relative to the repository root so they work at a GitHub Pages project URL.
 
+## Source inventory and implementation plan
+
+- **Home (`index.html`):** club positioning, activities, vision and links to the Journey and Partners pages.
+- **Journey (`journey.html`):** four team names, a photo gallery and milestone copy from 2018 through 2026.
+- **Partners (`partners.html`):** collaboration benefits, four proposed tiers, ecosystem logos and a Contact link.
+- **Contact:** the starter linked to `contact.html`, but the page was missing. The redesign adds a direct email destination.
+- **Shared files:** `style.css` and `script.js`; the starter script rotated four images on a timer.
+- **Image assets (26 total):** two club marks, four tier icons, eight team/event/aircraft photos, ten software/component/research marks, and two additional visual assets (`bg.jpg` and `cad-plane.png`). The supplied images were inspected and the relevant originals are reused in the redesign.
+
+The implementation keeps the existing static stack, connects all destinations, adds responsive layouts and accessible navigation, and uses the source’s repository-relative assets. Content that conflicts or cannot be substantiated from the supplied material is omitted or flagged for confirmation rather than replaced with invented facts.
+
 ## 1. What were the most noticeable flaws in the original website?
 
 - The shared layout used fixed widths up to 1,480 px for the page and banner, and a 1,440 px partner table. That forces horizontal overflow on smaller screens.
