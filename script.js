@@ -1,15 +1,33 @@
-var photos = [
-  "images/photo1.jpg",
-  "images/photo2.jpg",
-  "images/photo3.jpg",
-  "images/photo4.jpg"
-];
-var i = 0;
+document.documentElement.classList.add("js");
 
-setInterval(function () {
-  i = i + 1;
-  if (i >= photos.length) {
-    i = 0;
-  }
-  document.getElementById("slide").src = photos[i];
-}, 2000);
+const menuButton = document.querySelector(".menu-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
+
+if (menuButton && primaryNavigation) {
+  const setMenuOpen = (isOpen) => {
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    primaryNavigation.classList.toggle("is-open", isOpen);
+    menuButton.querySelector(".sr-only").textContent = isOpen ? "Close navigation" : "Open navigation";
+  };
+
+  menuButton.addEventListener("click", () => {
+    setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
+  });
+
+  primaryNavigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) setMenuOpen(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      setMenuOpen(false);
+      menuButton.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!primaryNavigation.contains(event.target) && !menuButton.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  });
+}

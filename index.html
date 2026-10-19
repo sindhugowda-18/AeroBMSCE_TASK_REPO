@@ -1,66 +1,166 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="robots" content="noindex">
-<title>AeroBMSCE</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b28">
+  <meta name="description" content="AeroBMSCE brings students together to design, build and test aircraft, UAVs and autonomous systems.">
+  <title>AeroBMSCE — Above Gravity, Beyond Limits</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<div class="notice">Practice website for the AeroBMSCE web development recruitment task. This is not the official AeroBMSCE website.</div>
-
-<div class="top">
-  <div class="wrap">
-    <img src="images/header-logo.png">
-    <div class="nav">
-      <a href="#">Home</a>
-      <a href="#who">Who We Are</a>
-      <a href="journey.html">Journey</a>
-      <a href="partners.html">Partners</a>
-      <a href="contact.html">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-notice">
+    <div class="container site-notice__inner">
+      <span class="site-notice__label">Recruitment task</span>
+      <span>Practice redesign · Not the official AeroBMSCE website</span>
     </div>
-    <div class="clear"></div>
   </div>
-</div>
 
-<div class="hero">
-  <div class="box">
-    <h1>AeroBMSCE</h1>
-    <p class="tag">&bull; Above Gravity &bull; &nbsp;&nbsp;&nbsp; &bull; Beyond Limits &bull;</p>
-    <p>ONE OF INDIA’S LONGEST-RUNNING COMPETITIVE AEROSPACE &amp; UAV TEAM WITH INTERNATIONAL FLIGHT HISTORY</p>
-  </div>
-</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AeroBMSCE home">
+        <img src="images/logo.png" alt="" width="56" height="44">
+        <span class="brand__name">AeroBMSCE<small>Flight systems · BMSCE</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Open navigation</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="index.html#who-we-are">Who we are</a>
+        <a href="index.html#what-we-build">What we build</a>
+        <a href="journey.html">Journey</a>
+        <a href="partners.html">Partners</a>
+        <a class="site-nav__contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-<img class="banner" src="images/photo8.jpg">
+  <main id="main">
+    <section class="hero hero--home">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Aerospace · Aeromodelling · Unmanned systems</p>
+          <h1>Above gravity.<br><em>Beyond limits.</em></h1>
+          <p class="hero__intro">AeroBMSCE brings students together to design, build and test aircraft, UAVs, drones and autonomous systems.</p>
+          <div class="button-row">
+            <a class="button button--accent" href="#what-we-build">Explore our work <span aria-hidden="true">↓</span></a>
+            <a class="text-link text-link--light" href="journey.html">See the journey <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero__coordinates" aria-hidden="true"><span>DESIGN</span><span>BUILD</span><span>FLIGHT</span></div>
+        </div>
+        <figure class="hero-visual">
+          <img src="images/photo2.jpg" alt="A group of students gathered beside an aircraft">
+          <figcaption><span class="hero-visual__index">01 / FLIGHT SYSTEMS</span><span>Engineering is better in the field.</span></figcaption>
+          <span class="hero-visual__corner" aria-hidden="true">AERO<br>01</span>
+        </figure>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
 
-<div class="wrap">
+    <section class="section section--paper" id="who-we-are">
+      <div class="container split-section">
+        <div>
+          <p class="eyebrow eyebrow--dark"><span class="eyebrow__line"></span> 01 / Who we are</p>
+          <h2>Curiosity with<br><em>workshop grit.</em></h2>
+        </div>
+        <div class="split-section__body">
+          <p class="lead">AeroBMSCE is an aerospace, aeromodelling and unmanned systems club at BMS College of Engineering.</p>
+          <p>The team’s work brings students together around practical engineering: shaping an idea, making a system, testing it, and learning from what happens next.</p>
+          <a class="text-link" href="journey.html">Meet the teams and explore milestones <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="container image-band">
+        <figure class="image-band__photo">
+          <img src="images/photo8.jpg" alt="A small aircraft in flight against a clear sky" loading="lazy">
+          <figcaption>From a built system to a flying one.</figcaption>
+        </figure>
+        <div class="image-band__note">
+          <span class="note-mark" aria-hidden="true">✳</span>
+          <p>Real constraints. Real prototypes.<br><em>Better questions after every test.</em></p>
+        </div>
+      </div>
+    </section>
 
-  <a name="who"></a>
-  <h4 class="sec">WHO WE ARE</h4>
-  <p>AeroBMSCE is the official aerospace, aeromodelling, and unmanned systems innovation club of BMS College of Engineering, operating from Propel Lab–3. Established in 2012, the club brings together engineers from 10+ departments to design, build, and test advanced aircraft, drones, and autonomous systems.</p>
+    <section class="section section--navy" id="what-we-build">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> 02 / What we build</p>
+            <h2>From first sketch<br>to <em>flight test.</em></h2>
+          </div>
+          <p class="section-heading__aside">A hands-on mix of design, fabrication, competition and autonomy—drawn from the work described in the starter site.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability">
+            <span class="capability__number">01</span>
+            <h3>Aircraft &amp; UAV design</h3>
+            <p>Competitive aircraft and unmanned aerial vehicle design, shaped around real engineering constraints.</p>
+            <span class="capability__arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability">
+            <span class="capability__number">02</span>
+            <h3>Drone racing &amp; autonomy</h3>
+            <p>Fast-moving flight systems, control, and autonomous capabilities developed through team projects.</p>
+            <span class="capability__arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability">
+            <span class="capability__number">03</span>
+            <h3>Fabrication &amp; testing</h3>
+            <p>Turning designs into hardware, then learning through practical testing and iteration.</p>
+            <span class="capability__arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability">
+            <span class="capability__number">04</span>
+            <h3>Student-led engineering</h3>
+            <p>Learning by solving real-world problems with collaborators across the college.</p>
+            <span class="capability__arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+        <div class="section-cta">
+          <p>Meet the teams behind the work.</p>
+          <a class="button button--outline-light" href="journey.html">Explore our journey <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
 
-  <h4 class="sec">WHAT WE DO</h4>
-  <ul>
-    <li>Competitive aircraft &amp; UAV design</li>
-    <li>Drone racing &amp; autonomy</li>
-    <li>Industry-grade fabrication &amp; testing</li>
-    <li>Talent development through real-world engineering</li>
-  </ul>
+    <section class="section section--sand">
+      <div class="container partner-callout">
+        <div>
+          <p class="eyebrow eyebrow--dark"><span class="eyebrow__line"></span> Work with AeroBMSCE</p>
+          <h2>Good engineering<br>needs <em>good partners.</em></h2>
+        </div>
+        <div class="partner-callout__body">
+          <p>Support can help make prototyping, research guidance and competition participation possible. Explore the collaboration options or contact the team about a fit.</p>
+          <div class="button-row">
+            <a class="button button--dark" href="partners.html">Partner with us <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <h4 class="sec">WHY IT MATTERS</h4>
-  <ul>
-    <li>Engineers trained on real constraints</li>
-    <li>Talent exposure before graduation</li>
-    <li>Brand visibility in elite technical ecosystems</li>
-  </ul>
-
-  <h4 class="sec">OUR VISION</h4>
-  <p>We envision AeroBMSCE as a leading aerospace and unmanned systems research group, renowned for design excellence, innovation, and competitive success. We aim to cultivate future leaders in the aerospace and drone industry, establishing a legacy of engineering excellence that inspires students worldwide.</p>
-
-  <p style="margin-top:30px">Want to know more about what we have achieved? <a href="journey.html">Click here</a>. Interested in working with us? <a href="partners.html">Click here</a>.</p>
-
-</div>
-
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand--footer" href="index.html" aria-label="AeroBMSCE home">
+        <img src="images/logo.png" alt="" width="48" height="38">
+        <span class="brand__name">AeroBMSCE<small>Above gravity · Beyond limits</small></span>
+      </a>
+      <p>Student aerospace and unmanned systems work<br>at BMS College of Engineering.</p>
+      <div class="footer-links">
+        <a href="journey.html">Journey</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>Recruitment-task redesign · Not the official club website</span>
+      <a href="mailto:aerobmsce@bmsce.ac.in">aerobmsce@bmsce.ac.in</a>
+    </div>
+  </footer>
 </body>
 </html>

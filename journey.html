@@ -1,108 +1,174 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="robots" content="noindex">
-<title>AeroBMSCE</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b28">
+  <meta name="description" content="Explore AeroBMSCE teams and source-listed aircraft, UAV and drone competition milestones.">
+  <title>Journey &amp; Milestones — AeroBMSCE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<div class="notice">Practice website for the AeroBMSCE web development recruitment task. This is not the official AeroBMSCE website.</div>
-
-<div class="top">
-  <div class="wrap">
-    <img src="images/header-logo.png">
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="#">Journey</a>
-      <a href="partners.html">Partners</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-notice">
+    <div class="container site-notice__inner">
+      <span class="site-notice__label">Recruitment task</span>
+      <span>Practice redesign · Not the official AeroBMSCE website</span>
     </div>
-    <div class="clear"></div>
-  </div>
-</div>
-
-<div class="wrap">
-
-  <div class="slide-box">
-    <img id="slide" src="images/photo1.jpg">
   </div>
 
-  <h1 class="sec">OUR JOURNEY &amp; IMPACT</h1>
-  <ul>
-    <li>Team Yaksha - International Competitions</li>
-    <li>Team Blue Impulse - Aeromodelling</li>
-    <li>TeamFlying Phantoms - Drone Development</li>
-    <li>Team Vectors - Drone Racing</li>
-  </ul>
-  <p>Since we have started, we’ve taken on and successfully completed 75 + projects, collaborating with students from more than 10 departments across the college. Along the way, we’ve produced 50+ research papers, reports, and certifications that highlight the creativity and dedication of our members. Our competitive spirit shines through our teams that represent us at various prestigious events:</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AeroBMSCE home">
+        <img src="images/logo.png" alt="" width="56" height="44">
+        <span class="brand__name">AeroBMSCE<small>Flight systems · BMSCE</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Open navigation</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#who-we-are">Who we are</a>
+        <a href="index.html#what-we-build">What we build</a>
+        <a href="journey.html" aria-current="page">Journey</a>
+        <a href="partners.html">Partners</a>
+        <a class="site-nav__contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-  <p class="credit">Credibility Summary<br>16+ years | 75+ projects | 20+ podium finishes | International flight history</p>
+  <main id="main">
+    <section class="page-hero page-hero--journey">
+      <div class="container page-hero__inner">
+        <p class="eyebrow"><span class="eyebrow__line"></span> AeroBMSCE / Journey</p>
+        <h1>Built by teams.<br><em>Measured in flight.</em></h1>
+        <p class="page-hero__intro">From aeromodelling and aircraft design to UAV development and drone racing, the work is carried by teams with different strengths and a shared interest in flight.</p>
+      </div>
+      <span class="page-hero__index" aria-hidden="true">02 / 04</span>
+    </section>
 
-  <div class="clear"></div>
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-heading section-heading--dark">
+          <div>
+            <p class="eyebrow eyebrow--dark"><span class="eyebrow__line"></span> Teams</p>
+            <h2>Different disciplines.<br><em>One flight line.</em></h2>
+          </div>
+          <p class="section-heading__aside">Team names and focus areas are carried over from the supplied starter material.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card"><span>01 / COMPETITION</span><h3>Team Yaksha</h3><p>International competitions</p></article>
+          <article class="team-card"><span>02 / AEROMODELLING</span><h3>Team Blue Impulse</h3><p>Aeromodelling</p></article>
+          <article class="team-card"><span>03 / UAV</span><h3>Team Flying Phantoms</h3><p>Drone development</p></article>
+          <article class="team-card"><span>04 / RACING</span><h3>Team Vectors</h3><p>Drone racing</p></article>
+        </div>
+      </div>
+    </section>
 
-  <div class="gallery">
-    <img src="images/photo5.jpg">
-    <img src="images/photo6.jpg">
-    <img src="images/photo7.jpg">
-  </div>
+    <section class="section section--navy">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> Milestones</p>
+            <h2>Learning, competing,<br><em>moving forward.</em></h2>
+          </div>
+          <p class="section-heading__aside">Placements and event names below reproduce the starter copy. Please confirm details with the team before public use.</p>
+        </div>
 
-  <h1 class="sec">Our Milestones</h1>
+        <div class="milestone-list">
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2026</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item">
+                <p class="eyebrow">SAE International Aero Design West</p>
+                <h3>2nd place in MATLAB Simulation Awards</h3>
+                <p>Starter copy also lists an overall #16 position in the Micro Class category, in Fort Worth, Texas, USA.</p>
+              </div>
+              <div class="milestone__item">
+                <p class="eyebrow">SAE Aerothon</p>
+                <h3>1st place — Unique Technology Development</h3>
+                <p>The starter associates this recognition with ADDC 2026; confirm the competition attribution before publication.</p>
+              </div>
+            </div>
+          </article>
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2025</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item">
+                <p class="eyebrow">SAE Aerothon · November</p>
+                <h3>2nd place overall</h3>
+                <p>₹1,25,000 cash prize, as listed in the starter.</p>
+              </div>
+              <div class="milestone__item">
+                <p class="eyebrow">SAE-Drone Design Challenge · May</p>
+                <h3>1st place — Best Technical Presentation</h3>
+                <p>₹10,000 cash prize, as listed in the starter.</p>
+              </div>
+              <div class="milestone__item">
+                <p class="eyebrow">SAE Autonomous Drone Design Challenge · April</p>
+                <h3>1st place — Best Innovation</h3>
+                <p>₹5,000 cash prize, as listed in the starter.</p>
+              </div>
+            </div>
+          </article>
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2024</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item"><p class="eyebrow">NITK Drone Racing Competition</p><h3>2nd place</h3><p>October 18–20, 2024.</p></div>
+              <div class="milestone__item"><p class="eyebrow">Global Academy of Technology · Drone Racing</p><h3>1st place</h3><p>November 2024.</p></div>
+              <div class="milestone__item"><p class="eyebrow">SAE International Aero Design West</p><h3>12th place globally</h3><p>August 2024.</p></div>
+            </div>
+          </article>
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2022</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item"><p class="eyebrow">SAE Aerothon</p><h3>3rd place</h3><p>₹50,000 cash prize, as listed in the starter.</p></div>
+              <div class="milestone__item"><p class="eyebrow">“lll South India Exhibition” (starter wording)</p><h3>2nd place</h3><p>₹15,000 cash prize; the starter names Kalpataru Institute of Technology, Tiptur, Karnataka.</p></div>
+              <div class="milestone__item"><p class="eyebrow">AI-VTOL · Techfest, IIT Bombay</p><h3>4th place nationally</h3><p>As listed in the starter.</p></div>
+              <div class="milestone__item"><p class="eyebrow">SAE International Aero Design West</p><h3>9th in Design Report · 11th in Technical Presentation</h3><p>Global placements, as listed in the starter.</p></div>
+            </div>
+          </article>
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2020</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item"><p class="eyebrow">SAE-India</p><h3>1st place overall</h3><p>₹1,00,000 cash prize; the starter credits Team Blue Impulse.</p></div>
+              <div class="milestone__item"><p class="eyebrow">SAE Aero Design West</p><h3>8th place in design standings globally</h3><p>As listed in the starter.</p></div>
+            </div>
+          </article>
+          <article class="milestone">
+            <div class="milestone__year"><span>SEASON</span><strong>2018</strong></div>
+            <div class="milestone__details">
+              <div class="milestone__item"><p class="eyebrow">SAE India · Anna University, Chennai</p><h3>3rd place overall</h3><p>2nd place in Design Report, as listed in the starter.</p></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div class="ms">
-    2026 SEASON<br>
-    <b>SAE International Aero Design West</b><br>
-    <b>2nd Place Internationally under MATLAB Simulation Awards.</b> Overall #16 Globally in Micro Class Category<br>
-    <b>Fort Worth, Texas, USA</b><br><br>
-    SAE Aerothon<br>
-    <b>1st Place under Unique Technology development at ADDC 2026.</b><br><br>
+    <section class="section section--paper section--gallery">
+      <div class="container">
+        <div class="section-heading section-heading--dark">
+          <div><p class="eyebrow eyebrow--dark"><span class="eyebrow__line"></span> In the field</p><h2>Work you can<br><em>stand beside.</em></h2></div>
+          <p class="section-heading__aside">A selection of team, event and aircraft photographs from the repository’s original image set.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo-card photo-card--wide"><img src="images/photo1.jpg" alt="Students at an AeroBMSCE competition event" loading="lazy"><figcaption>Competition / team work</figcaption></figure>
+          <figure class="photo-card"><img src="images/photo5.jpg" alt="A group of students gathered at an AeroBMSCE event" loading="lazy"><figcaption>Team / collaboration</figcaption></figure>
+          <figure class="photo-card"><img src="images/photo7.jpg" alt="A small drone displayed outdoors at an event" loading="lazy"><figcaption>Prototype / field</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    2025 SEASON<br>
-    SAE Aerothon<br>
-    <b>2nd place overall, ₹1,25,000 cash prize</b> (Nov 2025)<br><br>
-    SAE-Drone Design Challenge<br>
-    <b>1st place - Best Technical Presentation, ₹10,000 cash prize</b> (May 2025)<br><br>
-    SAE Autonomous Drone Design Challenge<br>
-    <b>1st place - Best Innovation ₹5000 cash prize</b> (April 2025)<br><br>
-
-    2024 SEASON<br>
-    NITK Drone Racing Competition<br>
-    <b>2nd place</b> (Oct 18-20,2024)<br><br>
-    Global Academy of Technology (Drone Racing)<br>
-    <b>1st place</b> (Nov 2024)<br><br>
-    SAE International Aero Design West<br>
-    <b>12th place globally</b> (Aug 2024)<br><br>
-
-    2022 SEASON<br>
-    SAE Aerothon<br>
-    <b>3rd place, ₹50,000 cash prize</b><br><br>
-    lll South India Exhibition<br>
-    <b>2nd place, ₹15000 cash prize</b><br>
-    Kalpataru Institute of Technology,Tiptur,Karnataka<br><br>
-    AI-VTOL (Techfest,IIT Bombay)<br>
-    <b>4th place nationally</b><br><br>
-    SAE International Aero Design West<br>
-    <b>9th Place (Design report), 11th Place (Technical Presentation) Globally</b><br><br>
-
-    2020 SEASON<br>
-    SAE-India<br>
-    <b>1st place overall, ₹1,00,000 cash prize</b><br>
-    Team Blue Impulse won Nationally<br><br>
-    SAE Aero Design,West<br>
-    <b>8th place in design standings globally</b><br><br>
-
-    2018 SEASON<br>
-    SAE INDIA<br>
-    Anna University, Chennai<br>
-    <b>3rd place overall,</b><br>
-    <b>2nd place in Design Report</b><br><br>
-    AND MANY MORE...
-  </div>
-
-  <div class="footer">&copy; AeroBMSCE</div>
-
-</div>
-
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand--footer" href="index.html" aria-label="AeroBMSCE home"><img src="images/logo.png" alt="" width="48" height="38"><span class="brand__name">AeroBMSCE<small>Above gravity · Beyond limits</small></span></a>
+      <p>Student aerospace and unmanned systems work<br>at BMS College of Engineering.</p>
+      <div class="footer-links"><a href="journey.html" aria-current="page">Journey</a><a href="partners.html">Partners</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>Recruitment-task redesign · Not the official club website</span><a href="mailto:aerobmsce@bmsce.ac.in">aerobmsce@bmsce.ac.in</a></div>
+  </footer>
 </body>
 </html>
